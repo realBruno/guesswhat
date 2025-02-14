@@ -3,16 +3,14 @@ function generate_password()
     const length = document.getElementById("range_input").value;
     let password = '';
 
-    for (let i = 0; i < length;)
+    for (let i = 0; i < length; i++)
     {
-        let char = parseInt(Math.random() * (92) + 33) // generates a random number between 0 and 126;
+        let char = parseInt(Math.random() * 92 + 33) // generates a random number between 0 and 126;
         password += String.fromCharCode(char);
         
     }
     const show_password = document.getElementById("show_password");
     show_password.textContent = password;
-
-     return password;
 }
 
 generate_password();
@@ -27,9 +25,8 @@ function copy_to_clipboard()
     copy_button.innerHTML = "Copied!"
 
     // delay of 1.5 seconds before changing back to "Copy"
-    const go_back_to_copy = setInterval(function ()
+    setTimeout(function ()
     {
         copy_button.innerHTML = "Copy";
-        clearInterval(go_back_to_copy);
     }, 1500);
 }
