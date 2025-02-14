@@ -10,4 +10,13 @@ function generate_password()
     }
     const show_password = document.getElementById("show_password");
     show_password.textContent = password;
+
+     return password;
+}
+
+function copy_to_clipboard()
+{
+    const text = document.getElementById("show_password");
+
+    navigator.clipboard.writeText(text.innerHTML);
 }
