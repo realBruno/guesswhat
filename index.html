@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    
+
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
 </head>
 
@@ -26,11 +26,18 @@
             Your password as unguessable as
             <i>guesses <span id="what">whats</span>.</i>
         </p>
-        
-        <input type="range" min="8" max="128" value="16" id="range_input">
+
+        <div class="password">
+            <textarea cols="15" rows="2" id="show_password"></textarea>
+
+            <input oninput="generate_password()" type="range" min="16" max="128" value="16" id="range_input">
+            <button onclick="generate_password()">Generate</button>
+            <button>Copy</button>
+
+        </div>
 
     </main>
-    
+
     <script src="script.js"></script>
 </body>
 
