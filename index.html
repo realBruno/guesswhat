@@ -28,18 +28,33 @@
         </p>
 
         <div class="password">
-            
+
             <textarea readonly cols="40" rows="5" id="show_password"></textarea>
 
             <input oninput="generate_password()" type="range" min="1" max="128" value="16" id="range_input">
 
-            <div id="buttons">
+            <div id="buttons_and_boxes">
+                <div id="checkboxes">
+                   
+                    <div>
+                        <input class="uppercase" type="checkbox"><span class="spans">A-Z</span>
+                        <input class="lowercase" type="checkbox"><span class="spans">a-z</span>
+                    </div>
+                    <div>
+                        <input class="numbers" type="checkbox"><span class="spans">123</span>
+                        <input class="special" type="checkbox"><span class="spans">@#$</span>
+                    </div>
 
-                <button id="generate" onclick="generate_password()">
-                    Generate
-                </button>
-                <button id="copy" onclick="copy_to_clipboard()">Copy</button>
+                </div>
 
+                <div id="buttons">
+
+                    <button id="generate" onclick="generate_password()">
+                        Generate
+                    </button>
+                    <button id="copy" onclick="copy_to_clipboard()">Copy</button>
+
+                </div>
             </div>
 
         </div>
