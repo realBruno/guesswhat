@@ -14,9 +14,10 @@ function generate_password()
      return password;
 }
 
+generate_password();
+
 function copy_to_clipboard()
 {
     const text = document.getElementById("show_password");
-
     navigator.clipboard.writeText(text.innerHTML);
 }

@@ -95,14 +95,25 @@ textarea
 {
     resize: none;
     margin-bottom: 0.4rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 10px;
     font-weight: 700;
-    color: white;
     background-color: black;
-    border: 3px solid white;
+    border:2px solid white;
     border-radius: 0.625rem;
+    
+    background: linear-gradient(to right,
+            #fc72ff, #8f68ff, #487bff,
+            #8f68ff, #fc72ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
 }
+
+
+
 
 #range_input
 {
@@ -115,12 +126,31 @@ textarea
 #buttons
 {
     margin-top: 0.4rem;
+    width: 10.625rem;
+    display: flex;
+    justify-content: space-between
 }
 
-#buttons button
+button
 {
     padding: 0.625rem;
     border-radius: 0.625rem;
     width: 80px;
-    border: none;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+
+    transition: all 0.4s;
 }
+
+#buttons button:hover
+{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 3px 3px rgb(250, 50, 117);
+}
+
+.generate
+{
+    margin-right: 500px;
+}
+/* RELOAD IMAGE */
