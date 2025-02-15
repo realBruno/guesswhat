@@ -30,6 +30,9 @@ h1
     color: white;
     font-size: 4rem;
     transition: font-size 0.7s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #what
@@ -61,6 +64,9 @@ h1
     font-size: 0.875rem;
     font-weight: 700;
     transition: font-size 0.7s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* *************** PASSWORD DIV (TEXT AREA and SLIDER) *************** */
@@ -125,6 +131,9 @@ button
     background-color: transparent;
     color: white;
     transition: all 0.4s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #buttons button:hover
@@ -155,6 +164,9 @@ button
     font-family: monospace;
     font-weight: 700;
     font-size: 0.9375rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* *************** RESPONSIVENESS *************** */
