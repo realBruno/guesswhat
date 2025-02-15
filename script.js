@@ -30,3 +30,10 @@ function copy_to_clipboard()
         copy_button.innerHTML = "Copy";
     }, 1500);
 }
+
+/* function checkbox()
+{
+    alert('marked');
+    console.log(document.getElementById("uppercase").checked); // boolean ?
+}
+ */

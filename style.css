@@ -133,18 +133,6 @@ button
     box-shadow: 1px 1px 3px 3px rgb(250, 50, 117);
 }
 
-/* *************** RESPONSIVENESS *************** */
-@media (max-width: 420px)
-{
-    h1
-    {
-        font-size: 3rem;
-    }
-    #slogan
-    {
-        font-size: 0.65625rem;
-    }
-}
 /* *************** BUTTONS AND CHECKBOXES *************** */
 #buttons_and_boxes
 {
@@ -156,7 +144,7 @@ button
     margin-top: 0.625rem;
 }
 
-.uppercase, .lowercase, .numbers, .special
+#uppercase, #lowercase, #numbers, #special
 {
     margin-left: 0.625rem;
 }
@@ -167,4 +155,17 @@ button
     font-family: monospace;
     font-weight: 700;
     font-size: 0.9375rem;
+}
+
+/* *************** RESPONSIVENESS *************** */
+@media (max-width: 480px)
+{
+    h1
+    {
+        font-size: 3rem;
+    }
+    #slogan
+    {
+        font-size: 0.65625rem;
+    }
 }
