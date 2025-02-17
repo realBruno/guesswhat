@@ -29,11 +29,15 @@ function copy_to_clipboard()
     {
         copy_button.innerHTML = "Copy";
     }, 1500);
-}
 
-/* function checkbox()
-{
-    alert('marked');
-    console.log(document.getElementById("uppercase").checked); // boolean ?
+
+    /* 
+    * checks if user is under http connection and alerts them that
+    * copy button may not work
+    */
+
+    if (window.location.protocol === 'http:')
+        console.log('http');
+    else
+        console.log('https');
 }
- */
