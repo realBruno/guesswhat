@@ -99,6 +99,7 @@ textarea
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-gradient 2.5s linear infinite;
+    height: 200px;
 }
 
 #range_input

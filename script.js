@@ -96,7 +96,7 @@ function generate_password() {
     }
     else if (lowercase && numbers) {
         for (let i = 0; i < length;) {
-            let char = parseInt(Math.random() * (97 - 48 - 1)) + 48;
+            let char = parseInt(Math.random() * (122 - 48 - 1)) + 48;
             if (97 <= char && char <= 122 || // lower
                 48 <= char && char <= 57 // number
             ) {
