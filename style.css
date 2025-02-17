@@ -90,7 +90,7 @@ textarea
     background-color: rgb(25, 25, 60);
     border:2px solid white;
     border-radius: 0.625rem;
-    /* field-sizing: content; */
+    field-sizing: content;
     background: linear-gradient(to right,
             #fc72ff, #8f68ff, #487bff,
             #8f68ff, #fc72ff);
