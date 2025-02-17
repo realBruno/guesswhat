@@ -147,7 +147,7 @@ function generate_password() {
     }
     else if (special) {
         for (let i = 0; i < length;) {
-            let char = parseInt(Math.random() * (126 - 33 - 1)) + 33;   
+            let char = parseInt(Math.random() * (126 - 33 - 1)) + 33;
             if (33 <= char && char <= 47 || 58 <= char && char <= 64 || 91 <= char && char <= 96 || 123 <= char && char <= 126 // special
             ) {
                 password += String.fromCharCode(char);
@@ -158,7 +158,24 @@ function generate_password() {
 
     const show_password = document.getElementById("show_password");
     show_password.textContent = password;
+
+    const checkboxes = document.querySelectorAll("input");
+    let flag = 1;
+    for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            flag = 0;
+            break;
+        }
+    }
+    if (flag)
+    {
+        document.getElementById("uppercase").checked = true;
+        return generate_password();
+    }
+        
 }
+
+
 
 // calls the function so a random password is shown when page loads
 generate_password();
