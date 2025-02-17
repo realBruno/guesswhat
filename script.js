@@ -13,14 +13,34 @@ function generate_password()
     show_password.textContent = password;
 }
 
-generate_password();
+// calls the function so a random password is shown when page loads
+generate_password(); 
 
 function copy_to_clipboard()
 {
+    // checks if user is under http and alerts s/he that copy button may not work   
+    if (window.location.protocol === 'http:')
+    {
+        Toastify({
+            text: "Copy button may not work under HTTP",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "bottom",
+            position: "right",
+            stopOnFocus: true,
+            style: {
+              background: "linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+    }
+
+    // gets the password and copies it
     const text = document.getElementById("show_password");
     navigator.clipboard.writeText(text.innerHTML);
     
-    // change button content from "Copy" to "Copied!"
+    // changes button content from "Copy" to "Copied!"
     const copy_button = document.getElementById("copy");
     copy_button.innerHTML = "Copied!"
 
@@ -29,15 +49,4 @@ function copy_to_clipboard()
     {
         copy_button.innerHTML = "Copy";
     }, 1500);
-
-
-    /* 
-    * checks if user is under http connection and alerts them that
-    * copy button may not work
-    */
-
-    if (window.location.protocol === 'http:')
-        console.log('http');
-    else
-        console.log('https');
 }
