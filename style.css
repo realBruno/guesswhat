@@ -5,6 +5,9 @@
     padding: 0;
     font-family: "Rubik", serif;
     box-sizing: border-box;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body
@@ -30,9 +33,6 @@ h1
     color: white;
     font-size: 4rem;
     transition: font-size 0.7s;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 #what
@@ -64,9 +64,6 @@ h1
     font-size: 0.875rem;
     font-weight: 700;
     transition: font-size 0.7s;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 /* *************** PASSWORD DIV (TEXT AREA and SLIDER) *************** */
@@ -79,6 +76,7 @@ h1
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 150px;
 }
 
 textarea
@@ -92,8 +90,7 @@ textarea
     background-color: rgb(25, 25, 60);
     border:2px solid white;
     border-radius: 0.625rem;
-    field-sizing: content;
-
+    /* field-sizing: content; */
     background: linear-gradient(to right,
             #fc72ff, #8f68ff, #487bff,
             #8f68ff, #fc72ff);
@@ -114,12 +111,11 @@ textarea
 
 #buttons
 {
-    margin-top: 0.4rem;
     width: 10.625rem;
-    justify-content: space-between;
-    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 button
@@ -131,9 +127,6 @@ button
     background-color: transparent;
     color: white;
     transition: all 0.4s;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 #buttons button:hover
@@ -142,15 +135,21 @@ button
     box-shadow: 1px 1px 3px 3px rgb(250, 50, 117);
 }
 
+#generate
+{
+    margin-right: 0.625rem;
+}
+
 /* *************** BUTTONS AND CHECKBOXES *************** */
 #buttons_and_boxes
 {
     display: inline-flex;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     width: 25rem;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 0.625rem;
+    height: 100%;
 }
 
 #uppercase, #lowercase, #numbers, #special
@@ -164,9 +163,15 @@ button
     font-family: monospace;
     font-weight: 700;
     font-size: 0.9375rem;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+}
+
+#checkboxes
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0.625rem;
 }
 
 /* *************** RESPONSIVENESS *************** */
