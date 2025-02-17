@@ -192,7 +192,8 @@ function copy_to_clipboard() {
             position: "right",
             stopOnFocus: true,
             style: {
-                background: "linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff)",
+                background: "transparent",
+                color: "white"
             },
             onClick: function () { } // Callback after click
         }).showToast();
