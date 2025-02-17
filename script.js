@@ -5,6 +5,12 @@ function generate_password() {
     const special = document.getElementById("special").checked;
     const length = document.getElementById("range_input").value;
     let password = '';
+    
+    const display_length = document.getElementById("display_length");
+    display_length.innerHTML = `${length}`;
+    
+    
+
 
     // i'll use a bunch of ifs because i have no clue on how to do that more efficiently
     if (uppercase && lowercase && numbers && special) {

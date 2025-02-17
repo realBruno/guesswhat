@@ -33,17 +33,23 @@
 
             <textarea readonly cols="40" rows="5" id="show_password"></textarea>
 
-            <input oninput="generate_password()" type="range" min="4" max="128" value="16" id="range_input">
+            <div id="display_and_range">
+                <input oninput="generate_password()" type="range" min="4" max="128" value="16" id="range_input">
+                <span id="display_length">16</span>
+            </div>
 
             <div id="buttons_and_boxes">
                 <div id="checkboxes">
-                   
+
                     <div>
-                        <input oninput="generate_password()" checked id="uppercase" type="checkbox"><span class="spans">A-Z</span>
-                        <input oninput="generate_password()" checked id="lowercase" type="checkbox"><span class="spans">a-z</span>
+                        <input oninput="generate_password()" checked id="uppercase" type="checkbox"><span
+                            class="spans">A-Z</span>
+                        <input oninput="generate_password()" checked id="lowercase" type="checkbox"><span
+                            class="spans">a-z</span>
                     </div>
                     <div>
-                        <input oninput="generate_password()" checked id="numbers" type="checkbox"><span class="spans">123</span>
+                        <input oninput="generate_password()" checked id="numbers" type="checkbox"><span
+                            class="spans">123</span>
                         <input oninput="generate_password()" id="special" type="checkbox"><span class="spans">@#$</span>
                     </div>
 

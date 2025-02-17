@@ -66,7 +66,7 @@ h1
     transition: font-size 0.7s;
 }
 
-/* *************** PASSWORD DIV (TEXT AREA and SLIDER) *************** */
+/* *************** TEXT AREA, SLIDER & DISPLAY *************** */
 
 .password
 {
@@ -92,12 +92,29 @@ textarea
     border:2px solid white;
     border-radius: 0.625rem;
     field-sizing: content;
+    border: 2px solid black;
+    outline: 2px solid white;
+}
+
+#display_and_range
+{
+    width: 50%;
+    margin-top: 0.625rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#display_length
+{
+    border: 1px solid white;
+    border-radius: 0.3125rem;
+    padding: 0.1875rem;
 }
 
 #range_input
 {
     width: 50%;
-    margin-top: 0.625rem;
 }
 
 /* *************** BUTTONS *************** */
@@ -144,6 +161,7 @@ button
     /* height: 100%; */
 }
 
+/* *************** CHECKBOXES *************** */
 #uppercase, #lowercase, #numbers, #special
 {
     margin-left: 0.625rem;
