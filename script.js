@@ -18,8 +18,7 @@ function generate_password() {
             let char = parseInt(Math.random() * (122 - 48 - 1)) + 48;
             if (48 <= char && char <= 57 || // number
                 65 <= char && char <= 90 || // uppercase
-                97 <= char && char <= 122   // lower
-            ) {
+                97 <= char && char <= 122) {   // lower
                 password += String.fromCharCode(char);
                 i++
             }
@@ -28,10 +27,10 @@ function generate_password() {
     else if (uppercase && lowercase && special) {
         for (let i = 0; i < length;) {
             let char = parseInt(Math.random() * (126 - 33 - 1)) + 33;
-            if (33 <= char && char <= 47 || 58 <= char && char <= 64 || 91 <= char && char <= 96 || 123 <= char && char <= 126 || // special
+            if (33 <= char && char <= 47 || 58 <= char && char <= 64 ||
+                91 <= char && char <= 96 || 123 <= char && char <= 126 || // special
                 65 <= char && char <= 90 || // uppercase
-                97 <= char && char <= 122   // lower
-            ) {
+                97 <= char && char <= 122) {   // lower
                 password += String.fromCharCode(char);
                 i++
             }
@@ -40,10 +39,10 @@ function generate_password() {
     else if (lowercase && numbers && special) {
         for (let i = 0; i < length;) {
             let char = parseInt(Math.random() * (126 - 33 - 1)) + 33;
-            if (33 <= char && char <= 47 || 58 <= char && char <= 64 || 91 <= char && char <= 96 || 123 <= char && char <= 126 || // special
+            if (33 <= char && char <= 47 || 58 <= char && char <= 64 ||
+                91 <= char && char <= 96 || 123 <= char && char <= 126 || // special
                 48 <= char && char <= 57 || // number
-                97 <= char && char <= 122   // lower
-            ) {
+                97 <= char && char <= 122) { // lower
                 password += String.fromCharCode(char);
                 i++
             }
@@ -52,10 +51,10 @@ function generate_password() {
     else if (uppercase && numbers && special) {
         for (let i = 0; i < length;) {
             let char = parseInt(Math.random() * (90 - 33 - 1)) + 33;
-            if (33 <= char && char <= 47 || 58 <= char && char <= 64 || 91 <= char && char <= 96 || 123 <= char && char <= 126 || // special
+            if (33 <= char && char <= 47 || 58 <= char && char <= 64 || 91
+                <= char && char <= 96 || 123 <= char && char <= 126 || // special
                 65 <= char && char <= 90 || // upper
-                48 <= char && char <= 57    // number
-            ) {
+                48 <= char && char <= 57) { // number
                 password += String.fromCharCode(char);
                 i++;
             }
@@ -65,8 +64,7 @@ function generate_password() {
         for (let i = 0; i < length;) {
             let char = parseInt(Math.random() * (122 - 65 - 1)) + 65;
             if (65 <= char && char <= 90 || // upper
-                97 <= char && char <= 122 // lower
-            ) {
+                97 <= char && char <= 122) { // lower
                 password += String.fromCharCode(char);
                 i++;
             }
@@ -76,8 +74,7 @@ function generate_password() {
         for (let i = 0; i < length;) {
             let char = parseInt(Math.random() * (90 - 48 - 1)) + 48;
             if (65 <= char && char <= 90 || // upper
-                48 <= char && char <= 57 // number
-            ) {
+                48 <= char && char <= 57) { // number
                 password += String.fromCharCode(char);
                 i++;
             }
@@ -87,7 +84,8 @@ function generate_password() {
         for (let i = 0; i < length;) {
             let char = parseInt(Math.random() * (90 - 33 - 1)) + 33;
             if (65 <= char && char <= 90 || // upper
-                33 <= char && char <= 47 || 58 <= char && char <= 64 || 91 <= char && char <= 96 || 123 <= char && char <= 126 // special
+                33 <= char && char <= 47 || 58 <= char && char <= 64 ||
+                91 <= char && char <= 96 || 123 <= char && char <= 126 // special
             ) {
                 password += String.fromCharCode(char);
                 i++;
@@ -98,8 +96,7 @@ function generate_password() {
         for (let i = 0; i < length;) {
             let char = parseInt(Math.random() * (122 - 48 - 1)) + 48;
             if (97 <= char && char <= 122 || // lower
-                48 <= char && char <= 57 // number
-            ) {
+                48 <= char && char <= 57) { // number
                 password += String.fromCharCode(char);
                 i++;
             }
@@ -109,7 +106,8 @@ function generate_password() {
         for (let i = 0; i < length;) {
             let char = parseInt(Math.random() * (122 - 33 - 1)) + 33;
             if (97 <= char && char <= 122 || // lower
-                33 <= char && char <= 47 || 58 <= char && char <= 64 || 91 <= char && char <= 96 || 123 <= char && char <= 126 // special
+                33 <= char && char <= 47 || 58 <= char && char <= 64 ||
+                91 <= char && char <= 96 || 123 <= char && char <= 126 // special
             ) {
                 password += String.fromCharCode(char);
                 i++;
@@ -120,7 +118,8 @@ function generate_password() {
         for (let i = 0; i < length;) {
             let char = parseInt(Math.random() * (126 - 33 - 1)) + 33;
             if (48 <= char && char <= 57 || // number
-                33 <= char && char <= 47 || 58 <= char && char <= 64 || 91 <= char && char <= 96 || 123 <= char && char <= 126 // special
+                33 <= char && char <= 47 || 58 <= char && char <= 64 ||
+                91 <= char && char <= 96 || 123 <= char && char <= 126 // special
             ) {
                 password += String.fromCharCode(char);
                 i++;
@@ -148,7 +147,8 @@ function generate_password() {
     else if (special) {
         for (let i = 0; i < length;) {
             let char = parseInt(Math.random() * (126 - 33 - 1)) + 33;
-            if (33 <= char && char <= 47 || 58 <= char && char <= 64 || 91 <= char && char <= 96 || 123 <= char && char <= 126 // special
+            if (33 <= char && char <= 47 || 58 <= char && char <= 64 ||
+                91 <= char && char <= 96 || 123 <= char && char <= 126 // special
             ) {
                 password += String.fromCharCode(char);
                 i++;
@@ -167,21 +167,17 @@ function generate_password() {
             break;
         }
     }
-    if (flag)
-    {
+    if (flag) {
         document.getElementById("uppercase").checked = true;
         return generate_password();
     }
-        
 }
-
-
 
 // calls the function so a random password is shown when page loads
 generate_password();
 
 function copy_to_clipboard() {
-    // checks if user is under http and alerts s/he that copy button may not work   
+    // checks if user is under http and alert that copy button may not work   
     if (window.location.protocol === 'http:') {
         Toastify({
             text: "Copy button may not work under HTTP",
