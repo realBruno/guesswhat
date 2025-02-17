@@ -87,18 +87,19 @@ textarea
     font-size: 1rem;
     padding: 10px;
     font-weight: 700;
-    background-color: rgb(25, 25, 60);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border:2px solid white;
     border-radius: 0.625rem;
     field-sizing: content;
-    background: linear-gradient(to right,
+    /* background: linear-gradient(to right,
             #fc72ff, #8f68ff, #487bff,
             #8f68ff, #fc72ff);
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animate-gradient 2.5s linear infinite;
+    animation: animate-gradient 2.5s linear infinite; */
     height: 200px;
 }
 
