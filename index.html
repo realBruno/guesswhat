@@ -39,12 +39,12 @@
                 <div id="checkboxes">
                    
                     <div>
-                        <input id="uppercase" type="checkbox"><span class="spans">A-Z</span>
-                        <input id="lowercase" type="checkbox"><span class="spans">a-z</span>
+                        <input oninput="generate_password()" checked id="uppercase" type="checkbox"><span class="spans">A-Z</span>
+                        <input oninput="generate_password()" checked id="lowercase" type="checkbox"><span class="spans">a-z</span>
                     </div>
                     <div>
-                        <input id="numbers" type="checkbox"><span class="spans">123</span>
-                        <input id="special" type="checkbox"><span class="spans">@#$</span>
+                        <input oninput="generate_password()" checked id="numbers" type="checkbox"><span class="spans">123</span>
+                        <input oninput="generate_password()" id="special" type="checkbox"><span class="spans">@#$</span>
                     </div>
 
                 </div>
