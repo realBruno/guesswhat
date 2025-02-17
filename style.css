@@ -76,7 +76,7 @@ h1
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 9.375rem;
+    /* height: 9.375rem; */
 }
 
 textarea
@@ -92,15 +92,6 @@ textarea
     border:2px solid white;
     border-radius: 0.625rem;
     field-sizing: content;
-    /* background: linear-gradient(to right,
-            #fc72ff, #8f68ff, #487bff,
-            #8f68ff, #fc72ff);
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate-gradient 2.5s linear infinite; */
-    height: 200px;
 }
 
 #range_input
@@ -117,7 +108,7 @@ textarea
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    /* height: 100%; */
 }
 
 button
@@ -150,7 +141,7 @@ button
     width: 25rem;
     justify-content: center;
     margin-top: 0.625rem;
-    height: 100%;
+    /* height: 100%; */
 }
 
 #uppercase, #lowercase, #numbers, #special
@@ -168,7 +159,7 @@ button
 
 #checkboxes
 {
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
